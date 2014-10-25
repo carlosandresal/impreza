@@ -1,0 +1,158 @@
+@import "partials/propiedades";
+
+body{
+	width: 1350px;
+	font-family: sans-serif;
+	 margin: 0 auto;
+}
+
+a{
+	text-decoration: none;
+}
+
+figure{
+	line-height: 120px;
+	margin-left: 105px;
+}
+
+li{
+	list-style-type: none;
+}
+
+nav ul{
+	margin: -95px 105px 0 0;
+	text-align: right;
+	
+	li{
+		display: $display-inline;
+		margin-left: 40px;
+
+		a{
+			color: rgb(111,111,111);
+			font-size: $font-medium;
+		}
+	}
+}
+
+h1{
+	font-size: $font-large;
+	color: $color-text;
+}
+
+h2{
+	font-size:$font-Xmedium;
+	margin-top: 0px;
+	color: $color-text;
+}
+
+.header-top{
+	height: 36px;
+	background-color: rgb(245,245,245);
+}
+
+.contact-izq{
+	display: $display-inline;
+	margin: 0 0 0 105px;
+	line-height: 36px;
+	color: $color-contact-header;
+	
+	a{
+		color: $color-contact-header;
+	}
+}
+
+.contact-der{
+	margin: -50px 90px 0 0;
+	text-align: right;
+	
+	li{
+		display: $display-inline;
+		line-height: 36px;
+		margin-right: 15px;
+	}
+}
+
+.header-down{
+	height: 120px;
+	background-color: $color-white;
+}
+
+.portada{
+	height: 353px;
+	background-color: rgb(102,102,102);
+
+	span{
+	 	line-height: 353px;
+		display: block;
+	 	color: $color-white;
+		font-size: $font-Xlarge;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase; 
+	}
+}
+
+.our-history{
+	height: 666px;
+
+	h1{
+		margin-top: 61px;
+		text-align: center;
+	}
+}
+
+.timeline{
+	text-align: center;
+	margin-bottom: 50px;
+
+	li{
+		height:70px; 
+		width:70px;
+		display: $display-inline;
+		font-size: $font-medium;
+		line-height: 70px;
+		margin: 20px 92px 0 92px;
+		border: 2px solid $color-bordo;
+		border-radius: 50px;
+		background-color: $color-white;
+
+		a{
+			color: rgb(68,64,53);
+
+			&:hover{
+				color:$color-white;
+				height:70px; 
+				width:70px;
+				display: $display-inline;
+				font-size: $font-medium;
+				line-height: 70px;
+				border-radius: 50px;
+				background-color: $color-bordo;
+			}
+		}
+	}
+}
+
+.line{
+	height: 1px;
+	background-color: rgba(152,152,154,0.5);
+	width: 1000px;
+	float:left;
+	margin:-90px 0 0 200px;
+}
+
+.columna{
+	width: 350px;
+	display: $display-inline;
+	margin-left: 40px;
+	vertical-align: top;
+	color: $color-text;
+
+	p{
+		line-height: 25px;
+	}
+}
+
+.izq{
+	margin: 0 0 0 125px;
+}
