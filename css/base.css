@@ -365,4 +365,63 @@ form input {
   text-transform: uppercase;
   background-color: #d13b7a; }
 
+/* HOME CSS */
+.lead {
+  height: 600px;
+  background-color: #666666; }
+  .lead span {
+    display: block;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 230px; }
+
+#line_lead {
+  text-align: center;
+  border-top: 1px solid rgba(152, 152, 154, 0.5);
+  box-shadow: 1px 1px 1px 0px rgba(152, 152, 154, 0.5); }
+
+.products_show {
+  height: 476px; }
+  .products_show h1 {
+    background-color: #f3f3f2;
+    font-weight: normal;
+    height: 100px;
+    text-align: center; }
+
+.main_social {
+  text-align: center;
+  margin-bottom: 10px; }
+  .main_social li {
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    line-height: 70px;
+    margin: 20px 125px 0 110px;
+    font-size: 18px;
+    border: 2px solid #d13b7a;
+    border-radius: 50px;
+    background-color: #ffffff; }
+    .main_social li img {
+      padding-top: 10px;
+      height: 50px;
+      width: 50px; }
+
+.text_articule {
+  text-align: center;
+  margin-bottom: 50px; }
+
+.main_text {
+  height: 150px;
+  width: 250px;
+  display: inline-block;
+  margin: 5px 20px 0 40px;
+  background-color: #ffffff; }
+
+.main_gray {
+  height: 151px;
+  background-color: #666666; }
+
 /*# sourceMappingURL=base.css.map */
