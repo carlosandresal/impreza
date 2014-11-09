@@ -156,6 +156,91 @@ form input {
 .izq {
   margin: 0 0 0 125px; }
 
+.stadistics {
+  background-color: #f2f2f2;
+  color: #343434;
+  font-family: Helvetica, sans-serif;
+  height: 330px;
+  padding: 0 70px;
+  text-align: center; }
+  .stadistics h1 {
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 45px 0 30px 0; }
+    .stadistics h1 span {
+      font-weight: bolder; }
+  .stadistics ul {
+    padding-left: 0;
+    list-style-type: none; }
+    .stadistics ul dd {
+      margin-left: 0; }
+
+.heartOrnament {
+  box-sizing: border-box;
+  position: relative; }
+  .heartOrnament .small-line {
+    background-color: rgba(152, 152, 154, 0.5);
+    display: inline-block;
+    height: 1.5px;
+    position: absolute;
+    width: 150px; }
+    .heartOrnament .small-line.left {
+      margin: 12px 0 0 32px; }
+    .heartOrnament .small-line.right {
+      margin: 12px 0 0 -180px; }
+  .heartOrnament img {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    padding: 5px auto; }
+
+.numbers {
+  box-sizing: border-box;
+  position: relative; }
+  .numbers li {
+    display: inline-block;
+    line-height: 50px;
+    width: 24%; }
+    .numbers li dt {
+      font-size: 62px; }
+      .numbers li dt.txt-pink {
+        color: #d14480; }
+      .numbers li dt.txt-lightgrey {
+        color: #666666; }
+
+.ourTeam {
+  color: #343434;
+  display: inline-block;
+  font-family: Helvetica, sans-serif;
+  padding: 0 100px 35px 100px;
+  text-align: center; }
+  .ourTeam h1 {
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 45px 0 30px 0; }
+  .ourTeam .columX3 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 33%; }
+    .ourTeam .columX3 .circle {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
+    .ourTeam .columX3 h4 {
+      color: #666666;
+      font-size: 20px;
+      margin: 20px 0; }
+      .ourTeam .columX3 h4:hover {
+        color: #d14480; }
+    .ourTeam .columX3 small {
+      color: rgba(152, 152, 154, 0.5); }
+    .ourTeam .columX3 p {
+      color: #666666;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 0 20px; }
+
 .our-clients {
   height: 337px;
   background-color: #f2f2f2; }
@@ -252,9 +337,6 @@ form input {
 
 .iconos-info {
   vertical-align: middle; }
-
-.texto-info:before {
-  background-image: url('images/header/place.png" '); }
 
 .contact-form {
   width: 745px;

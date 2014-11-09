@@ -1,5 +1,13 @@
 @import "partials/propiedades";
 
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+
 body{
 	width: 1350px;
 	margin: 0 auto;
@@ -218,6 +226,133 @@ form{
 .izq{
 	margin: 0 0 0 125px;
 }
+
+
+.stadistics{
+	background-color: $color-cream;
+	color: $color-darkgrey;
+	font-family: Helvetica, sans-serif;
+	height: 330px;
+	padding: 0 70px;
+	text-align: center;
+
+	h1{
+		font-size: $font-title;
+		margin: 0 auto;
+		padding: 45px 0 30px 0;
+		
+		span{
+		font-weight: bolder;
+
+		}
+	}
+
+	ul{
+		padding-left: 0;
+		list-style-type: none;
+		dd{
+			margin-left: 0;
+		}
+	}
+}
+
+.heartOrnament{
+	box-sizing: border-box;
+	position: relative;
+	
+	.small-line{
+	background-color: $color-line;
+	display: inline-block;
+	height: 1.5px;
+	position: absolute;
+	width: 150px;
+
+		&.left{
+		margin: 12px 0 0 32px;
+		}
+
+		&.right{
+		margin: 12px 0 0 -180px;
+		}
+	}
+
+	img{
+		display: inline-block;
+		height: 24px;
+		width: 24px;
+		padding: 5px auto;
+	}
+
+}
+
+.numbers{
+	box-sizing: border-box;
+	position: relative;
+		
+	li{
+		display: inline-block;
+		line-height: 50px;
+		width: 24%;
+		dt{
+			font-size: $font-prices;
+
+			&.txt-pink{
+				color: $color-pink;
+			}
+
+			&.txt-lightgrey{
+				color: $color-lightgrey;
+			}
+		}
+	}
+}
+
+
+.ourTeam{
+	color: $color-darkgrey;
+	display: inline-block;
+	font-family: Helvetica, sans-serif;
+	padding: 0 100px 35px 100px;
+	text-align: center;
+
+	h1{
+		font-size: $font-title;
+		margin: 0 auto;
+		padding: 45px 0 30px 0;
+	}
+
+	.columX3{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 33%;
+	
+		.circle{
+			@include border-radius(50%);
+		}
+
+		h4{
+			color: $color-lightgrey;
+			font-size: $font-subtitle;
+			margin: 20px 0;
+
+			&:hover{
+				color: $color-pink;
+			}
+		}
+
+		small{
+			color: $color-line;
+		}
+
+		p{
+			color: $color-lightgrey;
+			font-size: $font-paragraph;
+			line-height: 20px;
+			padding: 0 20px;
+		}
+	}
+}
+
 
 .our-clients{
 	height: 337px;
