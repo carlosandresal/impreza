@@ -231,13 +231,13 @@ form{
 .stadistics{
 	background-color: $color-cream;
 	color: $color-darkgrey;
-	font-family: Helvetica, sans-serif;
 	height: 330px;
 	padding: 0 70px;
 	text-align: center;
 
 	h1{
 		font-size: $font-title;
+		font-weight: normal;
 		margin: 0 auto;
 		padding: 45px 0 30px 0;
 		
@@ -248,8 +248,9 @@ form{
 	}
 
 	ul{
-		padding-left: 0;
 		list-style-type: none;
+		padding: 20px 0;
+		margin: 0 auto;
 		dd{
 			margin-left: 0;
 		}
@@ -258,29 +259,34 @@ form{
 
 .heartOrnament{
 	box-sizing: border-box;
+	display: inline-block;
+	height: 30px;
 	position: relative;
 	
 	.small-line{
 	background-color: $color-line;
-	display: inline-block;
 	height: 1.5px;
-	position: absolute;
+	margin-top: 12px;
 	width: 150px;
 
 		&.left{
-		margin: 12px 0 0 32px;
+		float: right;
 		}
 
 		&.right{
-		margin: 12px 0 0 -180px;
+		float: left;
 		}
+
+		&.shorter{
+			width: 60px;
+		}
+
 	}
 
 	img{
-		display: inline-block;
 		height: 24px;
+		padding: 0 5px;
 		width: 24px;
-		padding: 5px auto;
 	}
 
 }
@@ -311,12 +317,12 @@ form{
 .ourTeam{
 	color: $color-darkgrey;
 	display: inline-block;
-	font-family: Helvetica, sans-serif;
 	padding: 0 100px 35px 100px;
 	text-align: center;
 
 	h1{
 		font-size: $font-title;
+		font-weight: normal;
 		margin: 0 auto;
 		padding: 45px 0 30px 0;
 	}
@@ -616,4 +622,116 @@ form{
 .main_gray{
 	height: 151px;
 	background-color: rgb(102,102,102);
+}
+
+.simple{
+	height: 224px;
+
+	ul{
+		padding: 55px 0 0 0;
+	}
+}
+
+.verticalParallax{
+	background-image: url("../images/sample-1200x600.png");
+	box-sizing: border-box;
+	color: $color-white;
+	height: 500px;
+	line-height: 28px;
+	text-align: center;
+
+	video{
+		height: 310px;
+		padding: 95px 0 0 55px;
+		width: 550px;
+	}
+
+	h1{
+		color: $color-white;
+		font-weight: normal;
+		margin: 24px 0;
+	}
+
+	p{
+		font-size: $font-paragraph;
+		margin: 0 auto;
+		padding: 0 60px 40px 60px;
+	}
+}
+
+.halfBox{
+	display: inline-block;
+	vertical-align: middle;
+	width: 49%;
+}
+
+.shortButton{
+	background-color: $color-pink;
+	@include border-radius(5px);
+	color: $color-white;
+	font-size: $font-paragraph;
+	font-weight: bolder;
+	padding: 14px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 114px;
+
+	&:hover{
+		background-color: $color-white;
+		color: $color-pink;
+	}
+}
+
+.testimonials{
+
+	box-sizing: border-box;
+	padding: 50px 0;
+
+	h1{
+		font-weight: normal;
+		margin: 0 auto;
+		padding: 0 0 35px 0;
+		text-align: center;
+	}
+
+	.testimonialText{
+		
+		border: 2px solid $color-line;
+		@include border-radius(5px);
+		color: $color-lightgrey;
+		display: inline-block;
+		height: 230px;
+		margin-left: 50px;
+		vertical-align: middle;
+		width: 44%;
+
+		&:hover{
+			border: 2px solid $color-pink;
+		}
+
+		p{
+			font-size: $font-medium;
+			font-style: italic;
+			line-height: 28px;
+			margin: 0 auto;
+			padding: 30px 45px;
+			text-align: justify;
+		}
+
+		img{
+			height: 18px;
+			display: inline-block;
+			width: 20px;
+			padding-left: 45px;
+		}
+
+		small{
+			display: inline-block;
+		}
+
+		span{
+			font-weight: bolder;
+		}
+	}
+
 }

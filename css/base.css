@@ -159,40 +159,43 @@ form input {
 .stadistics {
   background-color: #f2f2f2;
   color: #343434;
-  font-family: Helvetica, sans-serif;
   height: 330px;
   padding: 0 70px;
   text-align: center; }
   .stadistics h1 {
     font-size: 30px;
+    font-weight: normal;
     margin: 0 auto;
     padding: 45px 0 30px 0; }
     .stadistics h1 span {
       font-weight: bolder; }
   .stadistics ul {
-    padding-left: 0;
-    list-style-type: none; }
+    list-style-type: none;
+    padding: 20px 0;
+    margin: 0 auto; }
     .stadistics ul dd {
       margin-left: 0; }
 
 .heartOrnament {
   box-sizing: border-box;
+  display: inline-block;
+  height: 30px;
   position: relative; }
   .heartOrnament .small-line {
     background-color: rgba(152, 152, 154, 0.5);
-    display: inline-block;
     height: 1.5px;
-    position: absolute;
+    margin-top: 12px;
     width: 150px; }
     .heartOrnament .small-line.left {
-      margin: 12px 0 0 32px; }
+      float: right; }
     .heartOrnament .small-line.right {
-      margin: 12px 0 0 -180px; }
+      float: left; }
+    .heartOrnament .small-line.shorter {
+      width: 60px; }
   .heartOrnament img {
-    display: inline-block;
     height: 24px;
-    width: 24px;
-    padding: 5px auto; }
+    padding: 0 5px;
+    width: 24px; }
 
 .numbers {
   box-sizing: border-box;
@@ -211,11 +214,11 @@ form input {
 .ourTeam {
   color: #343434;
   display: inline-block;
-  font-family: Helvetica, sans-serif;
   padding: 0 100px 35px 100px;
   text-align: center; }
   .ourTeam h1 {
     font-size: 30px;
+    font-weight: normal;
     margin: 0 auto;
     padding: 45px 0 30px 0; }
   .ourTeam .columX3 {
@@ -237,7 +240,7 @@ form input {
       color: rgba(152, 152, 154, 0.5); }
     .ourTeam .columX3 p {
       color: #666666;
-      font-size: 14px;
+      font-size: 15px;
       line-height: 20px;
       padding: 0 20px; }
 
@@ -423,5 +426,91 @@ form input {
 .main_gray {
   height: 151px;
   background-color: #666666; }
+
+.simple {
+  height: 224px; }
+  .simple ul {
+    padding: 55px 0 0 0; }
+
+.verticalParallax {
+  background-image: url("../images/sample-1200x600.png");
+  box-sizing: border-box;
+  color: #ffffff;
+  height: 500px;
+  line-height: 28px;
+  text-align: center; }
+  .verticalParallax video {
+    height: 310px;
+    padding: 95px 0 0 55px;
+    width: 550px; }
+  .verticalParallax h1 {
+    color: #ffffff;
+    font-weight: normal;
+    margin: 24px 0; }
+  .verticalParallax p {
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 0 60px 40px 60px; }
+
+.halfBox {
+  display: inline-block;
+  vertical-align: middle;
+  width: 49%; }
+
+.shortButton {
+  background-color: #d14480;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 14px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 114px; }
+  .shortButton:hover {
+    background-color: #ffffff;
+    color: #d14480; }
+
+.testimonials {
+  box-sizing: border-box;
+  padding: 50px 0; }
+  .testimonials h1 {
+    font-weight: normal;
+    margin: 0 auto;
+    padding: 0 0 35px 0;
+    text-align: center; }
+  .testimonials .testimonialText {
+    border: 2px solid rgba(152, 152, 154, 0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    color: #666666;
+    display: inline-block;
+    height: 230px;
+    margin-left: 50px;
+    vertical-align: middle;
+    width: 44%; }
+    .testimonials .testimonialText:hover {
+      border: 2px solid #d14480; }
+    .testimonials .testimonialText p {
+      font-size: 18px;
+      font-style: italic;
+      line-height: 28px;
+      margin: 0 auto;
+      padding: 30px 45px;
+      text-align: justify; }
+    .testimonials .testimonialText img {
+      height: 18px;
+      display: inline-block;
+      width: 20px;
+      padding-left: 45px; }
+    .testimonials .testimonialText small {
+      display: inline-block; }
+    .testimonials .testimonialText span {
+      font-weight: bolder; }
 
 /*# sourceMappingURL=base.css.map */
