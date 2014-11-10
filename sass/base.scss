@@ -231,13 +231,13 @@ form{
 .stadistics{
 	background-color: $color-cream;
 	color: $color-darkgrey;
+	font-family: Helvetica, sans-serif;
 	height: 330px;
 	padding: 0 70px;
 	text-align: center;
 
 	h1{
 		font-size: $font-title;
-		font-weight: normal;
 		margin: 0 auto;
 		padding: 45px 0 30px 0;
 		
@@ -248,9 +248,8 @@ form{
 	}
 
 	ul{
+		padding-left: 0;
 		list-style-type: none;
-		padding: 20px 0;
-		margin: 0 auto;
 		dd{
 			margin-left: 0;
 		}
@@ -259,34 +258,29 @@ form{
 
 .heartOrnament{
 	box-sizing: border-box;
-	display: inline-block;
-	height: 30px;
 	position: relative;
 	
 	.small-line{
 	background-color: $color-line;
+	display: inline-block;
 	height: 1.5px;
-	margin-top: 12px;
+	position: absolute;
 	width: 150px;
 
 		&.left{
-		float: right;
+		margin: 12px 0 0 32px;
 		}
 
 		&.right{
-		float: left;
+		margin: 12px 0 0 -180px;
 		}
-
-		&.shorter{
-			width: 60px;
-		}
-
 	}
 
 	img{
+		display: inline-block;
 		height: 24px;
-		padding: 0 5px;
 		width: 24px;
+		padding: 5px auto;
 	}
 
 }
@@ -317,12 +311,12 @@ form{
 .ourTeam{
 	color: $color-darkgrey;
 	display: inline-block;
+	font-family: Helvetica, sans-serif;
 	padding: 0 100px 35px 100px;
 	text-align: center;
 
 	h1{
 		font-size: $font-title;
-		font-weight: normal;
 		margin: 0 auto;
 		padding: 45px 0 30px 0;
 	}
@@ -620,9 +614,109 @@ form{
 
 }
 .main_gray{
-	height: 151px;
+	height: 180px;
+	width: auto;
 	background-color: rgb(102,102,102);
+	img{
+		width: 200px
+	}
 }
+
+.parallax_horizon{
+	height: 500px;
+	background-image: url(http://us-themes.com/wp/CorsaXML/wp-content/uploads/parallax.png);
+}
+.parallax{
+	margin-top:-30px;
+}
+.parallax_image{
+	width: 574px;
+	height: 400px;
+	float: right;
+	margin-right: 110px;
+	margin-top: -351px;
+}
+.box_parallax{
+	width: 547px;
+	height: 400px;
+	margin-left: 100px;
+	h1{
+		color: white;
+	}
+}
+
+.parallax_contact{
+	line-height: 110px;
+	a{
+		border: 3px solid $color-white;
+		color: $color-white;
+		border-radius: 5px;
+		font-size: $font-medium;
+		font-weight: bold;
+		padding: 10px 50px;
+		&:hover{
+			background-color: $color-white;
+			color: $color-bordo;
+		}
+	}
+}
+.contenedor{
+	h1{
+		padding-left:290px;
+		padding-bottom: 30px;
+		color: #90877e;
+	}
+	p{
+		color: #90877e;
+		font-size: 15px;
+		margin: 0 20px 0 20px;
+	}
+	
+}
+.productos{
+	height:650px;
+	margin: 0 140px 0 140px ;
+}
+.tabla_productos{
+	width:350px;
+	height:484px;
+	display: inline-block;
+	div div img{
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+	}
+	h4{
+		color: #90877e;
+		text-align: center;
+		display: inline-block;
+	}
+}
+
+.boton_product{
+	line-height: 110px;
+	a{
+		border: 3px solid #484649;
+		color: #484649;
+		border-radius: 5px;
+		font-size: $font-medium;
+		font-weight: bold;
+		padding: 10px 50px;
+		&:hover{
+			background-color: $color-bordo;
+			color: white;
+		}
+	}
+}
+.position_boton{
+	margin-top: -120px;
+	margin-left: 400px;
+}
+.img_pos{
+	margin: -15px 10px;
+}
+
+
 
 .simple{
 	height: 224px;

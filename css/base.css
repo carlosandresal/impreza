@@ -159,43 +159,40 @@ form input {
 .stadistics {
   background-color: #f2f2f2;
   color: #343434;
+  font-family: Helvetica, sans-serif;
   height: 330px;
   padding: 0 70px;
   text-align: center; }
   .stadistics h1 {
     font-size: 30px;
-    font-weight: normal;
     margin: 0 auto;
     padding: 45px 0 30px 0; }
     .stadistics h1 span {
       font-weight: bolder; }
   .stadistics ul {
-    list-style-type: none;
-    padding: 20px 0;
-    margin: 0 auto; }
+    padding-left: 0;
+    list-style-type: none; }
     .stadistics ul dd {
       margin-left: 0; }
 
 .heartOrnament {
   box-sizing: border-box;
-  display: inline-block;
-  height: 30px;
   position: relative; }
   .heartOrnament .small-line {
     background-color: rgba(152, 152, 154, 0.5);
+    display: inline-block;
     height: 1.5px;
-    margin-top: 12px;
+    position: absolute;
     width: 150px; }
     .heartOrnament .small-line.left {
-      float: right; }
+      margin: 12px 0 0 32px; }
     .heartOrnament .small-line.right {
-      float: left; }
-    .heartOrnament .small-line.shorter {
-      width: 60px; }
+      margin: 12px 0 0 -180px; }
   .heartOrnament img {
+    display: inline-block;
     height: 24px;
-    padding: 0 5px;
-    width: 24px; }
+    width: 24px;
+    padding: 5px auto; }
 
 .numbers {
   box-sizing: border-box;
@@ -214,11 +211,11 @@ form input {
 .ourTeam {
   color: #343434;
   display: inline-block;
+  font-family: Helvetica, sans-serif;
   padding: 0 100px 35px 100px;
   text-align: center; }
   .ourTeam h1 {
     font-size: 30px;
-    font-weight: normal;
     margin: 0 auto;
     padding: 45px 0 30px 0; }
   .ourTeam .columX3 {
@@ -240,7 +237,7 @@ form input {
       color: rgba(152, 152, 154, 0.5); }
     .ourTeam .columX3 p {
       color: #666666;
-      font-size: 15px;
+      font-size: 14px;
       line-height: 20px;
       padding: 0 20px; }
 
@@ -424,8 +421,91 @@ form input {
   background-color: #ffffff; }
 
 .main_gray {
-  height: 151px;
+  height: 180px;
+  width: auto;
   background-color: #666666; }
+  .main_gray img {
+    width: 200px; }
+
+.parallax_horizon {
+  height: 500px;
+  background-image: url(http://us-themes.com/wp/CorsaXML/wp-content/uploads/parallax.png); }
+
+.parallax {
+  margin-top: -30px; }
+
+.parallax_image {
+  width: 574px;
+  height: 400px;
+  float: right;
+  margin-right: 110px;
+  margin-top: -351px; }
+
+.box_parallax {
+  width: 547px;
+  height: 400px;
+  margin-left: 100px; }
+  .box_parallax h1 {
+    color: white; }
+
+.parallax_contact {
+  line-height: 110px; }
+  .parallax_contact a {
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 50px; }
+    .parallax_contact a:hover {
+      background-color: #ffffff;
+      color: #d13b7a; }
+
+.contenedor h1 {
+  padding-left: 290px;
+  padding-bottom: 30px;
+  color: #90877e; }
+.contenedor p {
+  color: #90877e;
+  font-size: 15px;
+  margin: 0 20px 0 20px; }
+
+.productos {
+  height: 650px;
+  margin: 0 140px 0 140px; }
+
+.tabla_productos {
+  width: 350px;
+  height: 484px;
+  display: inline-block; }
+  .tabla_productos div div img {
+    width: 40px;
+    height: 40px;
+    display: inline-block; }
+  .tabla_productos h4 {
+    color: #90877e;
+    text-align: center;
+    display: inline-block; }
+
+.boton_product {
+  line-height: 110px; }
+  .boton_product a {
+    border: 3px solid #484649;
+    color: #484649;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 50px; }
+    .boton_product a:hover {
+      background-color: #d13b7a;
+      color: white; }
+
+.position_boton {
+  margin-top: -120px;
+  margin-left: 400px; }
+
+.img_pos {
+  margin: -15px 10px; }
 
 .simple {
   height: 224px; }
@@ -448,7 +528,7 @@ form input {
     font-weight: normal;
     margin: 24px 0; }
   .verticalParallax p {
-    font-size: 15px;
+    font-size: 14px;
     margin: 0 auto;
     padding: 0 60px 40px 60px; }
 
@@ -464,7 +544,7 @@ form input {
   -ms-border-radius: 5px;
   border-radius: 5px;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bolder;
   padding: 14px 30px;
   text-decoration: none;
