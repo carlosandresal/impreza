@@ -177,22 +177,24 @@ form input {
 
 .heartOrnament {
   box-sizing: border-box;
+  display: inline-block;
+  height: 30px;
   position: relative; }
   .heartOrnament .small-line {
     background-color: rgba(152, 152, 154, 0.5);
-    display: inline-block;
     height: 1.5px;
-    position: absolute;
+    margin-top: 12px;
     width: 150px; }
     .heartOrnament .small-line.left {
-      margin: 12px 0 0 32px; }
+      float: right; }
     .heartOrnament .small-line.right {
-      margin: 12px 0 0 -180px; }
+      float: left; }
+    .heartOrnament .small-line.shorter {
+      width: 60px; }
   .heartOrnament img {
-    display: inline-block;
     height: 24px;
-    width: 24px;
-    padding: 5px auto; }
+    padding: 0 5px;
+    width: 24px; }
 
 .numbers {
   box-sizing: border-box;
@@ -237,7 +239,7 @@ form input {
       color: rgba(152, 152, 154, 0.5); }
     .ourTeam .columX3 p {
       color: #666666;
-      font-size: 14px;
+      font-size: 15px;
       line-height: 20px;
       padding: 0 20px; }
 
@@ -528,7 +530,7 @@ form input {
     font-weight: normal;
     margin: 24px 0; }
   .verticalParallax p {
-    font-size: 14px;
+    font-size: 15px;
     margin: 0 auto;
     padding: 0 60px 40px 60px; }
 
@@ -544,7 +546,7 @@ form input {
   -ms-border-radius: 5px;
   border-radius: 5px;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bolder;
   padding: 14px 30px;
   text-decoration: none;
