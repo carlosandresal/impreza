@@ -1,5 +1,13 @@
 @import "partials/propiedades";
 
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+
 body{
 	width: 1350px;
 	margin: 0 auto;
@@ -219,6 +227,138 @@ form{
 	margin: 0 0 0 125px;
 }
 
+
+.stadistics{
+	background-color: $color-cream;
+	color: $color-darkgrey;
+	font-family: Helvetica, sans-serif;
+	height: 330px;
+	padding: 0 70px;
+	text-align: center;
+
+	h1{
+		font-size: $font-title;
+		margin: 0 auto;
+		padding: 45px 0 30px 0;
+		
+		span{
+		font-weight: bolder;
+
+		}
+	}
+
+	ul{
+		padding-left: 0;
+		list-style-type: none;
+		dd{
+			margin-left: 0;
+		}
+	}
+}
+
+.heartOrnament{
+	box-sizing: border-box;
+	display: inline-block;
+	height: 30px;
+	position: relative;
+	
+	.small-line{
+	background-color: $color-line;
+	height: 1.5px;
+	margin-top: 12px;
+	width: 150px;
+
+		&.left{
+		float: right;
+		}
+
+		&.right{
+		float: left;
+		}
+
+		&.shorter{
+			width: 60px;
+		}
+
+	}
+
+	img{
+		height: 24px;
+		padding: 0 5px;
+		width: 24px;
+	}
+
+}
+
+.numbers{
+	box-sizing: border-box;
+	position: relative;
+		
+	li{
+		display: inline-block;
+		line-height: 50px;
+		width: 24%;
+		dt{
+			font-size: $font-prices;
+
+			&.txt-pink{
+				color: $color-pink;
+			}
+
+			&.txt-lightgrey{
+				color: $color-lightgrey;
+			}
+		}
+	}
+}
+
+
+.ourTeam{
+	color: $color-darkgrey;
+	display: inline-block;
+	font-family: Helvetica, sans-serif;
+	padding: 0 100px 35px 100px;
+	text-align: center;
+
+	h1{
+		font-size: $font-title;
+		margin: 0 auto;
+		padding: 45px 0 30px 0;
+	}
+
+	.columX3{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 33%;
+	
+		.circle{
+			@include border-radius(50%);
+		}
+
+		h4{
+			color: $color-lightgrey;
+			font-size: $font-subtitle;
+			margin: 20px 0;
+
+			&:hover{
+				color: $color-pink;
+			}
+		}
+
+		small{
+			color: $color-line;
+		}
+
+		p{
+			color: $color-lightgrey;
+			font-size: $font-paragraph;
+			line-height: 20px;
+			padding: 0 20px;
+		}
+	}
+}
+
+
 .our-clients{
 	height: 337px;
 	background-color: $color-grey-bg;
@@ -420,3 +560,287 @@ form{
 	background-color: $color-bordo;
 }
 
+/* HOME CSS */
+
+.lead{
+	height: 600px;
+	background-color: rgb(102,102,102);
+
+	span{
+	 	display: block;
+
+	 	color: $color-white;
+		font-size: 60px;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase; 
+		padding-top: 230px;
+	}
+}
+#line_lead{
+	text-align: center;
+	border-top: 1px solid rgba(152,152,154,0.5);
+	box-shadow: 1px 1px 1px 0px rgba(152,152,154,0.5);
+}
+
+.products_show{
+	height: 476px;
+	h1{
+		background-color: rgb(243,243,242);
+		font-weight: normal;
+		height: 100px;
+		text-align: center;
+	}
+}
+
+.main_social{
+	text-align: center;
+	margin-bottom: 10px;
+
+	li{
+		height:70px; 
+		width:70px;
+		display: $display-inline;
+		line-height: 70px;
+		margin: 20px 125px 0 110px;
+
+		font-size: $font-medium;
+		border: 2px solid $color-bordo;
+		border-radius: 50px;
+		background-color: $color-white;
+		img{
+			padding-top: 10px;
+			height: 50px;
+			width: 50px;
+		}
+	}
+}
+.text_articule{
+	text-align: center;
+	margin-bottom: 50px;
+
+}
+.main_text{
+	height:150px; 
+	width:250px;
+	display: $display-inline;
+	margin: 5px 20px 0 40px;
+	background-color: $color-white;
+
+}
+.main_gray{
+	height: 180px;
+	width: auto;
+	background-color: rgb(102,102,102);
+	img{
+		width: 200px
+	}
+}
+
+.parallax_horizon{
+	height: 500px;
+	background-image: url(http://us-themes.com/wp/CorsaXML/wp-content/uploads/parallax.png);
+}
+.parallax{
+	margin-top:-30px;
+}
+.parallax_image{
+	width: 574px;
+	height: 400px;
+	float: right;
+	margin-right: 110px;
+	margin-top: -351px;
+}
+.box_parallax{
+	width: 547px;
+	height: 400px;
+	margin-left: 100px;
+	h1{
+		color: white;
+	}
+}
+
+.parallax_contact{
+	line-height: 110px;
+	a{
+		border: 3px solid $color-white;
+		color: $color-white;
+		border-radius: 5px;
+		font-size: $font-medium;
+		font-weight: bold;
+		padding: 10px 50px;
+		&:hover{
+			background-color: $color-white;
+			color: $color-bordo;
+		}
+	}
+}
+.contenedor{
+	h1{
+		padding-left:290px;
+		padding-bottom: 30px;
+		color: #90877e;
+	}
+	p{
+		color: #90877e;
+		font-size: 15px;
+		margin: 0 20px 0 20px;
+	}
+	
+}
+.productos{
+	height:650px;
+	margin: 0 140px 0 140px ;
+}
+.tabla_productos{
+	width:350px;
+	height:484px;
+	display: inline-block;
+	div div img{
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+	}
+	h4{
+		color: #90877e;
+		text-align: center;
+		display: inline-block;
+	}
+}
+
+.boton_product{
+	line-height: 110px;
+	a{
+		border: 3px solid #484649;
+		color: #484649;
+		border-radius: 5px;
+		font-size: $font-medium;
+		font-weight: bold;
+		padding: 10px 50px;
+		&:hover{
+			background-color: $color-bordo;
+			color: white;
+		}
+	}
+}
+.position_boton{
+	margin-top: -120px;
+	margin-left: 400px;
+}
+.img_pos{
+	margin: -15px 10px;
+}
+
+
+
+.simple{
+	height: 224px;
+
+	ul{
+		padding: 55px 0 0 0;
+	}
+}
+
+.verticalParallax{
+	background-image: url("../images/sample-1200x600.png");
+	box-sizing: border-box;
+	color: $color-white;
+	height: 500px;
+	line-height: 28px;
+	text-align: center;
+
+	video{
+		height: 310px;
+		padding: 95px 0 0 55px;
+		width: 550px;
+	}
+
+	h1{
+		color: $color-white;
+		font-weight: normal;
+		margin: 24px 0;
+	}
+
+	p{
+		font-size: $font-paragraph;
+		margin: 0 auto;
+		padding: 0 60px 40px 60px;
+	}
+}
+
+.halfBox{
+	display: inline-block;
+	vertical-align: middle;
+	width: 49%;
+}
+
+.shortButton{
+	background-color: $color-pink;
+	@include border-radius(5px);
+	color: $color-white;
+	font-size: $font-paragraph;
+	font-weight: bolder;
+	padding: 14px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 114px;
+
+	&:hover{
+		background-color: $color-white;
+		color: $color-pink;
+	}
+}
+
+.testimonials{
+
+	box-sizing: border-box;
+	padding: 50px 0;
+
+	h1{
+		font-weight: normal;
+		margin: 0 auto;
+		padding: 0 0 35px 0;
+		text-align: center;
+	}
+
+	.testimonialText{
+		
+		border: 2px solid $color-line;
+		@include border-radius(5px);
+		color: $color-lightgrey;
+		display: inline-block;
+		height: 230px;
+		margin-left: 50px;
+		vertical-align: middle;
+		width: 44%;
+
+		&:hover{
+			border: 2px solid $color-pink;
+		}
+
+		p{
+			font-size: $font-medium;
+			font-style: italic;
+			line-height: 28px;
+			margin: 0 auto;
+			padding: 30px 45px;
+			text-align: justify;
+		}
+
+		img{
+			height: 18px;
+			display: inline-block;
+			width: 20px;
+			padding-left: 45px;
+		}
+
+		small{
+			display: inline-block;
+		}
+
+		span{
+			font-weight: bolder;
+		}
+	}
+
+}
