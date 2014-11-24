@@ -214,6 +214,13 @@ form input {
   margin-left: 20px;
   text-align: left; }
 
+.place-contact {
+  background: url(../images/footer/place-small.png) no-repeat;
+  display: block;
+  padding: 0 0 0 40px; }
+  .place-contact p {
+    color: #90877e; }
+
 .icon-footer li {
   display: inline-block; }
 
@@ -252,9 +259,6 @@ form input {
 
 .iconos-info {
   vertical-align: middle; }
-
-.texto-info:before {
-  background-image: url('images/header/place.png" '); }
 
 .contact-form {
   width: 745px;
